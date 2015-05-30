@@ -1,0 +1,18 @@
+{
+  "name": "preprocess-loader",
+  "version": "0.1.0",
+  "description": "preprocess loader module for webpack",
+  "main": "index.js",
+  "author": "Yu J. @dearrrfish",
+  "license": "MIT",
+  "dependencies": {
+    "loader-utils": "^0.2.x"
+  },
+  "peerDependencies": {
+    "preprocess": "^2.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dearrrfish/preprocess-loader.git"
+  }
+}
