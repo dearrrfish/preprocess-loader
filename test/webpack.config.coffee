@@ -42,7 +42,7 @@ module.exports =
             loader: 'coffee!cjsx!../?+DEBUG&NODE_ENV=production'
         }, {
             test: /\.test_pp_options$/
-            loader: "coffee!cjsx!../?{DEBUG:true,ppOptions:{type:'cjsx'}}"
+            loader: "../?{ppOptions:{type:'js'}}!coffee!cjsx!../?{DEBUG:true,ppOptions:{type:'cjsx'}}"
         }, {
             test: /\.js$/
             loader: 'babel-loader!../?+DEBUG'
