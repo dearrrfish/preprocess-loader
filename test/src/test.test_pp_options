@@ -1,0 +1,25 @@
+#global define
+
+define [], ->
+  "use strict"
+
+  # @exclude
+  console.log 'this should be excluded!'
+  # @endexclude
+
+  # @if NODE_ENV='development'
+  console.log 'development mode'
+  # @endif
+
+  # @ifndef TEST
+  console.log 'test not defined'
+  # @endif
+
+  # @ifdef DEBUG
+  console.log 'deubg mode'
+  # @endif
+
+  # @include ./include.txt
+  # @include ./base/include.txt
+
+  # echo doesn't work for coffeescript

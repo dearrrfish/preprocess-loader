@@ -1,0 +1,30 @@
+{
+  "name": "preprocess-loader-test",
+  "version": "0.2.0",
+  "description": "Tests for preprocess-laoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-loader": "^6.0.1",
+    "cjsx-loader": "^2.0.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
+    "node-libs-browser": "^0.5.2",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.9.10"
+  },
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "preprocess",
+    "loader"
+  ]
+}
