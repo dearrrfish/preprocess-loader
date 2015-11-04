@@ -39,16 +39,16 @@ null                   -> {}
   module: {
     loaders: [{
         test: /\.coffee$/
-        loader: 'coffee!../?+DEBUG&NODE_ENV=production'
+        loader: 'coffee!preprocess?+DEBUG&NODE_ENV=production'
     }, {
         test: /\.cjsx$/
-        loader: 'coffee!cjsx!../?+DEBUG&NODE_ENV=production'
+        loader: 'coffee!cjsx!preprocess?+DEBUG&NODE_ENV=production'
     }, {
         test: /\.test_pp_options$/
-        loader: "coffee!cjsx!../?{DEBUG:true,ppOptions:{type:'cjsx'}}"
+        loader: "coffee!cjsx!preprocess?{DEBUG:true,ppOptions:{type:'cjsx'}}"
     }, {
         test: /\.js$/
-        loader: 'babel-loader!../?+DEBUG'
+        loader: 'babel-loader!preprocess?+DEBUG'
     }]
   }
 }
@@ -101,7 +101,7 @@ somDebuggingCall()
 `@echo`  block won't be processed in `coffee/shell` type unless applying another preprocess loading after it is compiled to javascript.
 
 ``` coffeescript
-loader: "../?{ppOptions:{type:'js'}}!coffee!cjsx!../?{DEBUG:true,ppOptions:{type:'cjsx'}}"
+loader: "preprocess?{ppOptions:{type:'js'}}!coffee!cjsx!preprocess?{DEBUG:true,ppOptions:{type:'cjsx'}}"
 ```
 
 **More examples can be found in [README of preprocess](https://github.com/jsoverson/preprocess#directive-syntax).**
