@@ -1,24 +1,24 @@
 {
-  "name": "preprocess-loader",
-  "description": "preprocess loader module for webpack",
-  "version": "0.2.0",
-  "homepage": "https://github.com/dearrrfish/preprocess-loader",
-  "main": "index.js",
-  "author": {
-    "name": "Yu Jin",
-    "email": "dearrrfish@gmail.com"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "loader-utils": "^0.2.x",
-    "lodash": "^3.10.1",
-    "preprocess": "^3.0.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:dearrrfish/preprocess-loader.git"
-  },
-  "bugs": {
-    "url": "https://github.com/dearrrfish/preprocess-loader/issues"
-  }
+    "name": "preprocess-loader",
+    "description": "preprocess loader module for webpack",
+    "version": "0.2.0",
+    "homepage": "https://github.com/dearrrfish/preprocess-loader",
+    "main": "index.js",
+    "author": {
+        "name": "Yu Jin",
+        "email": "dearrrfish@gmail.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "loader-utils": "^1.0.0",
+        "lodash": "^3.10.1",
+        "preprocess": "^3.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:dearrrfish/preprocess-loader.git"
+    },
+    "bugs": {
+        "url": "https://github.com/dearrrfish/preprocess-loader/issues"
+    }
 }
