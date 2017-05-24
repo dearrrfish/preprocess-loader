@@ -18,7 +18,7 @@ module.exports = (source) ->
         type: extension
 
     # parse and init context from query
-    query = loaderUtils.getOptions this
+    query = loaderUtils.getOptions(this) || {}
 
     # get possible user-specific preprocess options from query
     if _.isObject query.ppOptions
