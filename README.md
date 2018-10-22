@@ -34,6 +34,32 @@ null                   -> {}
 
 #### webpack.config file
 
+##### Webpack 2+ (Thanks @scholtzm)
+``` javascript
+const config = {
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'preprocess-loader',
+            options: {
+              foo: true,
+              bar: 'baz'
+              ppOptions: {
+                type: 'js'
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+};
+```
+
+##### Webpack 1
 ``` coffeescript
 {
   module: {
